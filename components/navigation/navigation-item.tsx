@@ -46,6 +46,8 @@ const onClick=()=>{
             )}>
                 <Image
                 fill
+                priority
+                sizes="fit-content"
                 src={imageUrl}
                 alt="Channel"/>
             </div>

@@ -19,7 +19,7 @@ export const ServerHeader=({server,role}:ServerHeaderProps)=>{
     const isModerator= isAdmin || role=== MemberRole.MODERATER;
 
     return (
-        <DropdownMenu >
+        <DropdownMenu>
             <DropdownMenuTrigger className="focus:outline-none" asChild>
                 <button 
                 className="w-full text-md font-semibold px-3 flex 
@@ -31,8 +31,8 @@ export const ServerHeader=({server,role}:ServerHeaderProps)=>{
                 </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent 
-            className="w-56 text-xs font-medium text-black
-            dark:text:neutral-400 space-y-[2px] ">
+            className="w-56 text-xs font-medium text-black absolute
+            dark:text:neutral-400 space-y-[2px]">
                 {isModerator && (
                     <DropdownMenuItem
                     onClick={()=>onOpen("invite",{server})}
